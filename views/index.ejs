@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NanoURL - Every URL has a story.</title>
+    <meta name="keywords" content="nurl, nanourl, nano, url, link, links, short, shortener, shortened, minify, compress, zip, encode, social, share, content, media, easy">
+    <meta name="description" content="NanoURL - Nurl.me URL shortener.">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <link href= "./assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div>
+        <div id="header">
+            <span id="header_L"><a class="pimptxt">NanoURL</a> - 2021
+                
+            </span>	
+            <span id="header_R">
+                <a class="pimptxt" id="changelog" href="http://nurl.me/changelog">&lt; changelog &gt;</a>
+                <a class="pimptxt" id="changelog" href="http://nurl.me/stats">&lt; stats &gt;</a>
+            </span>
+        </div>
+        <div id="full_area">
+        <center>
+
+            <div id="formwrap">
+                <div id="title"><h1><a href="http://nurl.me/">NanoURL</a></h1><h3 id="beta"><a href="http://nurl.me/">BETA!</a></h3></div>
+                <p><i>Yo dawg, I heard you like URL's...</i></p>	
+                <br><br>
+                <form id="JqAjaxForm" action="/shortUrls" method="POST" style="display: block;">
+                    <input id="url" placeholder="The long URL goes here..." name="url" size="705" onchange="checkHttp(this)" type="text">
+                    <p style="font-size: 10px;  margin-bottom: 2px;"><i>You can use the password field to protect the short link. (max=20 char)</i></p>
+                    <input id="password" placeholder="Password (optional)" autocomplete="off" size="20" maxlength="20" name="password">
+                    <p></p>
+                    <input id="Submit" name="Submit" value="Shorten" type="submit">
+                </form>
+            </div>
+            <br>
+            <div id="message">Paste a link and push the big button!</div>
+            
+        </center>
+    </div>
+</body>
+</html>
