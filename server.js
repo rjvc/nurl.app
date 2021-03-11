@@ -2,9 +2,12 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
 
-
-
 app.use(express.static("views"));
+
+app.get('/stats', function (req, res)
+{
+    res.render('stats.html');
+});
 
 app.get('/', function(req, res){
     res.render('index.ejs')
