@@ -4,10 +4,10 @@ const app = express()
 
 app.use(express.static("views"));
 
-app.get('/stats', function (req, res)
-{
-    res.render('stats.html');
-});
+app.get('/stats', (req, res) => {
+  let stats = require('/views/stats.html')
+  res.set(stats)
+})
 
 app.get('/', function(req, res){
     res.render('index.ejs')
